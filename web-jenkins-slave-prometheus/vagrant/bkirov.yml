@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  remote_user: root
+
+  tasks:
+  
+  - name: Instalirame sql
+    yum: name=mariadb-server state=latest
+  - name: Instalirame Httpd
+    yum: name=httpd state=latest
